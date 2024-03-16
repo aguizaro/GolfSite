@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>In The Rough</title>
+  </head>
+  <body>
+    <div id="container">
+      <nav>
+        <a href="#play">Play</a>
+        <a href="#about">About</a>
+        <a href="#team">The Team</a>
+      </nav>
+      <header>
+        <h1>In The Rough</h1>
+        <p id="subhead">Online Multiplayer Golf Party Game</p>
+      </header>
+
+      <main>
+
+        <section id="play">
+          <h2>Play Now</h2>
+          <p> This is the latest build of our vertical slice. It can be played on a pc or on a mobile device. Please consider joining our playtest server if you would like to provide feedback.</p>
+          <div id="game-display">
+            
+            <div class="golf-icon">
+              <img src="img/golfcart.png" alt="GolfBall" />
+            </div>
+
+            <div class="social-icons">
+              <a href="https://aguizaro.github.io/GolfProduction" target="_blank" title="PlayNow">
+                <i class="fa-solid fa-gamepad"> In The Rough</i>
+              </a>
+            </div>
+
+            <div class ="golf-icon">
+              <img src="img/ragdoll.png" alt="In The Rough Logo" />
+            </div>
+
+          </div>
+        </section>
+
+        <section id="about">
+          <h2>About</h2>
+          <p>
+            <I>In The Rough</I> is a multiplayer golf party game that was created as a part of the UCSC Senior Capstone Series for Computer Science: Computer Game Design Majors.
+            This game was built in Unity 3D levaring Unity Services' Netcode for Gameobjects to create a multiplayer experience. The game is currently in development and is being playtested by the public.
+          </p>
+          <h3>Constraints</h3>
+          <p>Our game was designed under the following externally imposed constraints: </p>
+          <ul>
+            <li>Accessibility: We designed our game to be playable with a single hand by providing an alternate single hand control scheme. We also designed this game in a way that the player reaches a natural resting point within 2 minutes of gameplay.</li>
+            <li>Localization: Our game is localized to ------------------------------------------- these languages --------------------- </li>
+            <li>Game Format: Our game was designed to be playable by any internet connected device that has a browser</li>
+          </ul>
+          <h3>Development</h3>
+          <p>Here are some of the prototypes we made a long the way --- insert here --  </p>
+          <h3>Gameplay</h3>
+          <p>Our game is a multiplayer golf party game. The game is designed to be played by 2-5 players. The game is played in a series of rounds. Each round, players take turns hitting their golf ball towards the hole. The player who gets their ball in the hole in the fewest strokes wins the round. The player who wins the most rounds wins the game. Players can strike each other ... -- Insert Gameplay Video Here ---- </p>
+        </section>
+  
+        <section id="team">
+
+          <h2>Meet The Team</h2>
+          <div id = "team-list">
+            <a href="https://github.com/jperoneucsc" target="_blank">
+              <div class="team-member">
+                <img src="https://avatars.githubusercontent.com/u/132640078?v=4" alt="JP" />
+                <h3>John Perone</h3>
+                <p>Developer</p>
+              </div>
+            </a>
+
+            <div class="team-member">
+              <a href="https://github.com/IcySmoooth" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/90065902?v=4" alt="MN" />
+                <h3>Michael Nieto</h3>
+                <p>Developer</p>
+              </a>
+            </div>
+
+            <div class="team-member">
+              <a href="https://github.com/arthurslin" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/84103538?v=4" alt="AL" />
+                <h3>Arthur Lin</h3>
+                <p>Developer</p>
+              </a>
+            </div>
+
+            <div class="team-member">
+              <a href="https://github.com/aguizaro" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/77490592?v=4" alt="TG" />
+                <h3>Tony Guizar</h3>
+                <p>Developer</p>
+              </a>
+            </div>
+
+            <div class="team-member">
+              <a href="https://github.com/mphein" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/130398478?v=4" alt="MH" />
+                <h3>Michael Hein</h3>
+                <p>Developer</p>
+              </a>
+            </div>
+
+            <div class="team-member">
+              <img src="https://avatars.githubusercontent.com/u/130398478?v=4" alt="SS" />
+              <h3>Shloak Sinha</h3>
+              <p>Developer</p>
+            </div>
+
+          </div>
+
+        </section>
+      </main>
+      <footer>
+        <div class="social-icons">
+          <a href="https://github.com/aguizaro/GolfProduction" target="_blank" title="GitHub">
+              <i class="fab fa-github"> Github</i>
+          </a>
+      </div>
+      <div class="social-icons">
+          <a href="https://discord.gg/sQKhM8vmqe" target="_blank" title="DiscordInvite">
+              <i class="fa-brands fa-discord"> Playtest Server</i>
+          </a>
+      </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
