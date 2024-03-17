@@ -42,6 +42,7 @@ a:hover {
 body {
   display: flex;
   place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -64,6 +65,48 @@ nav {
   margin-bottom: 1em;
   border-radius: 5em;
   box-shadow: 6px 4px 6px rgb(255, 255, 255);
+}
+
+.video-prototype {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 10px;
+  box-shadow: 6px 4px 6px #7d8d82;
+  outline: 2px solid #fff;
+}
+
+.video-prototype p {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0 1em 0 1em;
+  padding: 0.25em;
+  background-color: var(--third-color);
+  border-radius: 5px;
+
+
+}
+
+#gameplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 10px;
+  box-shadow: 6px 4px 6px #7d8d82;
+  outline: 2px solid #fff;
+}
+
+#gameplay p {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 1em 0 1em 0;
+  padding: 0.25em;
+  background-color: var(--third-color);
+  border-radius: 5px;
 }
 
 #game-display {
@@ -109,7 +152,9 @@ nav {
   margin: 1em;
   border-radius: 5px;
   box-shadow: 6px 4px 6px #7d8d82;
-  outline: 1px solid #fff;
+  outline: 2px solid #fff;
+  font-size: .8em;
+  background-color: #b6cdbd3a;
 }
 
 .team-member img {
@@ -117,6 +162,7 @@ nav {
   max-height: 10em;
   border-radius: 50%;
 }
+
 
 ul {
   font-size: 1.2em;
@@ -150,8 +196,8 @@ footer {
   background-color: var(--fourth-color);
   color: #fff;
   text-align: center;
-  padding: 0;
-  margin-top: 1em;
+  margin: 2em 0 0 0;
+  padding: 0.25em;
   bottom: 0;
   width: 100%;
   border-radius: 5em;
@@ -167,11 +213,36 @@ h1 {
 
 h2 {
   color: var(--fourth-color);
-  font-size: 2em;
+  font-size: 2.5em;
+  margin: 0.5em;
+}
+
+h3 {
+  font-size: 1.8em;
+
+}
+
+#constraints {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 6px 4px 6px #7d8d82;
+  outline: 2px solid #fff;
+}
+
+#constraints p {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0 1em 0 1em;
+  padding: 0.25em;
+  background-color: var(--third-color);
+  border-radius: 5px;
 }
 
 #container {
-  max-width: 1280px;
+  max-width: 90vw;
   min-width: 600px;
   margin: 0 auto;
   padding: 2rem;
@@ -253,17 +324,46 @@ button:focus-visible {
 
 @media (max-width: 768px) {
   #game-display img {
-    max-width: 15em;
+    max-width: 12em;
   }
 
   .team-member {
     padding: 0.5em;
     margin: 0.5em;
+    font-size: 0.7em;
   }
 
   .team-member img {
     max-width: 4em;
     max-height: 6em;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+
+  #constraints {
+    flex-direction: column;
+  }
+
+  #constraints p {
+    font-size: 1em;
+    margin: 1em 0 1em 0;
+
+  }
+
+
+}
+
+@media (max-width: 1000px) {
+  .video-prototype {
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .video-prototype p {
+    margin: 1em;
+    width: inherit;
   }
 }
 
