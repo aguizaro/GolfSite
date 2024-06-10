@@ -3,155 +3,312 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="src/style.css" />
 
-    <title>In The Rough</title>
+    <title>Golf Bash: Online</title>
   </head>
   <body>
     <div id="container">
       <nav>
-        <a href="#play">Play</a>
+        <a href="#play">Wishlist</a>
         <a href="#about">About</a>
         <a href="#team">The Team</a>
       </nav>
       <header>
-        <h1>In The Rough</h1>
+        <img id= "title-img" src="img/GBO.png" alt="GBO" />
         <p id="subhead">Online Multiplayer Golf Party Game</p>
       </header>
 
-      <main>
+      <br />
 
+      <main>
         <section id="play">
-          <h2>Play Now</h2>
-          <p> This is the latest build of our vertical slice. It can be played on a pc or on a mobile device. Please consider joining our playtest server if you would like to provide feedback.</p>
+          <h2>Wishlist on Steam</h2>
+          <p>
+            You can now wishlist <i>Golf Bash: Online</i> on Steam! Click below
+            to be taken to the Steam store page.
+          </p>
           <div id="game-display">
-            
             <div class="golf-icon">
               <img src="img/golfcart.png" alt="GolfBall" />
             </div>
 
             <div class="social-icons">
-              <a href="https://aguizaro.github.io/GolfProduction" target="_blank" title="PlayNow">
-                <i class="fa-solid fa-gamepad"> In The Rough</i>
+              <a
+                href="https://store.steampowered.com/app/2976320/Golf_Bash_Online/"
+                target="_blank"
+                title="SteamPage"
+              >
+                <i class="fa-brands fa-steam"> GBO on Steam</i>
               </a>
             </div>
 
-            <div class ="golf-icon">
-              <img src="img/ragdoll.png" alt="In The Rough Logo" />
+            <div class="golf-icon">
+              <img src="img/ragdoll.png" alt="Golf Bash: Online Logo" />
             </div>
-
           </div>
         </section>
 
         <section id="about">
           <h2>About</h2>
           <p>
-            <I>In The Rough</I> is a multiplayer golf party game that was created as a part of the UCSC Senior Capstone Series for Computer Science: Computer Game Design Majors.
-            This game was built in Unity 3D levaring Unity Services' Netcode for Gameobjects to create a multiplayer experience. The game is currently in development and is being playtested by the public.
+            <i>Golf Bash: Online</i> is a multiplayer golf party game that was
+            created as a part of the UCSC Senior Capstone Series for Computer
+            Science: Computer Game Design Majors. This game was built in Unity
+            3D levaring Unity Services' Netcode for Gameobjects to create a
+            multiplayer experience. The game is currently in development and is
+            being playtested by the public.
           </p>
+          <h3>What is GBO ?</h3>
+          <ul>
+            <li>
+              Rather than strictly focusing on core golf mechanics akin to other golf simulation games, our goal is to promote player to player interaction through actions that are not tied down to realism.
+            </li>
+            <li>
+              The goal is to use the “golfing” aspect of the game as a base layer and quickly divert the user’s focus into their own player agency. </li>
+            <li>
+              Surrealist ragdoll physics and player free-will creates a chaotic party environment that immerses players in fast paced, lawless play.
+            </li>
+          </ul>
+
+          <h3> Why are we making GBO?</h3>
+          <ul>
+            <li>
+              We believe some of the most rewarding gameplay moments are ones shared between friends.
+            </li>
+            <li>
+              We decided to make a party game that brings out these moments in ways you may not traditionally expect.
+            </li>
+            <li>
+              Players are drawn to games that create unique and comedic experiences within their group of friends, Golf Bash Online aims to do just that.
+            </li>
+          </ul>
+
+            <h3>Roadmap</h3>
+            <div class="roadmap">
+              <img src="img/roadmap-pre.png" alt="RoadmapPre" />
+              <img src="img/roadmap-post.png" alt="RoadmapPost" />
+            </div>
+
           <h3>Constraints</h3>
-          <p>Our game was designed under the following externally imposed constraints: </p>
+          <p>
+            Our game was designed under the following externally imposed
+            constraints:
+          </p>
           <div id="constraints">
-            <p><strong>Accessibility:</strong> We designed our game to be playable with a single hand by providing an alternate single hand control scheme. We also designed this game in a way that the player reaches a natural resting point within 2 minutes of gameplay.</p>
-            <p><strong>Localization:</strong> Our game supports multiple languages, including English, Spanish, and Chinese. We have leveraged Unity's localization kit to provide localization for logographic text and right-to-left text.</p>
-            <p><strong>Game Format:</strong> Our game was designed to be playable by any internet connected device that has a browser. We recommend using the Google Chrome web browser to play our webGL build.</p>
+            <p>
+              <strong>Accessibility:</strong> We designed our game to be
+              playable with a single hand by allowing remapping of controls and
+              a simple control scheme. A color blind mode is coming soon.
+            </p>
+            <p>
+              <strong>Localization:</strong> Our game supports multiple
+              languages, including English, Spanish, Farsi, and Chinese. We have
+              leveraged Unity's localization kit to provide localization for
+              logographic text and right-to-left text.
+            </p>
+            <p>
+              <strong>Game Format:</strong> Our game was designed to be playable
+              on Windows and MacOS devices. It is a global multiplayer game that
+              allows users to create and join public lobbies to play with
+              friends.
+            </p>
           </div>
           <h3>Development</h3>
-          <p>Here are some of the prototypes we made along the way... </p>
+          <p>Here are some of the prototypes we made along the way...</p>
           <div class="video-prototype">
             <video controls width="480" height="270">
-              <source src="vid/Sprint1_VideoMontage.mp4" type="video/mp4">
+              <source src="vid/Sprint1_VideoMontage.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <p> This is a video montage of our first multiplayer prototype and how we set it up using Netcode for Gameobjects, Unity Relay, and Unity Lobby. This prototype contains the steps our Network and Deployment lead, Tony Guizar, took in order to deliver a seamless muliplayer experience that works globablly and is playable on any modern browser.</p>
+            <p>
+              This is a video montage of our first multiplayer prototype and how
+              we set it up using Netcode for Gameobjects, Unity Relay, and Unity
+              Lobby. This prototype contains the steps our Network and
+              Deployment lead, Tony Guizar, took in order to deliver a seamless
+              muliplayer experience that works globablly and is playable on any
+              modern browser.
+            </p>
           </div>
 
           <div class="video-prototype">
             <video controls width="480" height="270">
-              <source src="vid/CI-DEMO.mp4" type="video/mp4">
+              <source src="vid/CI-DEMO.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <p> In this video, Tony explains how our continuous integration / delivery setup works. We used the documentation provided by <a href="https://game.ci/">Game CI</a> in order to test, build and deploy our Unity game every time we push updates to our github repository. This setup allows us to always have the latest build of our game available for playtests or for sharing with others</p>
+            <p>
+              In this video, Tony explains how our continuous integration /
+              delivery setup works. We used the documentation provided by
+              <a href="https://game.ci/">Game CI</a> in order to test, build and
+              deploy our Unity game every time we push updates to our github
+              repository. This setup allows us to always have the latest build
+              of our game available for playtests or for sharing with others
+            </p>
           </div>
 
           <h3>Gameplay</h3>
-            <div id="gameplay">
-              <p><em>In the Rough</em> is a multiplayer golf party game where players will be able to join a lobby with their friends and play a series of rounds in which they need to make the ball into the hole. This game allows player to player combat by striking your golf club at players. The goal of the game is to make your ball into the hole with the least amount of strokes on your card. This game emphasizes the player to player interaction and competition between players.</p>
-              <p>The current vertical slice contains the multiplayer functionality, player combat, a full golf course level, and a single hole to start off. Our vertical slice mostly only contains the main gameplay loop of, swinging your ball at the hole, fighting your opponents, and moving towards the next hole. Our high level goals for expanding this into a full game includes: adding multiple levels / different courses, adding some very simple mini-games around the map that draw the player’s attention, polishing our main gameplay mechanics, and improving the game feel. It would be great to try and add golf cart driving to the full game, but we are still looking into that feature. </p>
-              <p>It is important for the game design seen in our vertical slice to be scaled up to something where players can have a great online experience playing with their friends. The most exciting part of this is being able to navigate to a webpage and start up a game where your friends can easily play with you. We want the players to have fun competing against each other and keep playing together over and over again. For this reason, we need the full game to include attractive and good feeling levels/ courses along with more refined player interactions that keep the player engaged and wanting to tell their friends about this game.</p>
-            </div>
-          </section>
-  
-        <section id="team">
+          <div id="gameplay">
+            <p>
+              <em>Golf Bash: Online</em> is a multiplayer golf party game where
+              players will be able to join a lobby with their friends and play a
+              series of rounds in which they need to make the ball into the
+              hole. This game allows player to player combat by striking your
+              golf club at players. The goal of the game is to make your ball
+              into the hole with the least amount of strokes on your card. This
+              game emphasizes the player to player interaction and competition
+              between players.
+            </p>
+            <p>
+              The current game version contains the multiplayer functionality,
+              player combat, a full golf course level, and 9 golf holes. Our game mostly only contains the main
+              gameplay loop of, swinging your ball at the hole, fighting your
+              opponents, and moving towards the next hole. Our high level goals
+              for expanding this into a full game includes: adding multiple
+              levels / different courses, adding some very simple mini-games
+              around the map that draw the player’s attention, polishing our
+              main gameplay mechanics, and improving the game feel.
+            </p>
+            <p>
+              It is important for the game design seen in our game to
+              be scaled up to something where players can have a great online
+              experience playing with their friends. The most exciting part of
+              this is being able to navigate to a seamless interface and start up a game
+              where your friends can easily play with you. We want the players
+              to have fun competing against each other and keep playing together
+              over and over again. For this reason, we need the full game to
+              include attractive and good feeling levels/ courses along with
+              more refined player interactions that keep the player engaged and
+              wanting to tell their friends about this game.
+            </p>
+          </div>
+        </section>
 
+        <section id="team">
           <h2>Meet The Team</h2>
-          <div id = "team-list">
-            <a href="https://github.com/jperoneucsc" target="_blank">
-              <div class="team-member">
-                <img src="https://avatars.githubusercontent.com/u/132640078?v=4" alt="JP" />
+          <div id="team-list">
+            <div class="team-member">
+              <a href="https://github.com/jperoneucsc" target="_blank">
+                <img
+                  src="https://avatars.githubusercontent.com/u/132640078?v=4"
+                  alt="JP"
+                />
                 <h3>John Perone</h3>
-                <p>Developer</p>
-              </div>
-            </a>
+                <p>Lead Designer, Gameplay Programmer</p>
+              </a>
+            </div>
 
             <div class="team-member">
               <a href="https://github.com/IcySmoooth" target="_blank">
-                <img src="https://avatars.githubusercontent.com/u/90065902?v=4" alt="MN" />
+                <img
+                  src="https://avatars.githubusercontent.com/u/90065902?v=4"
+                  alt="MN"
+                />
                 <h3>Michael Nieto</h3>
-                <p>Developer</p>
+                <p>Sound Designer, Programmer</p>
               </a>
             </div>
 
             <div class="team-member">
               <a href="https://github.com/arthurslin" target="_blank">
-                <img src="https://avatars.githubusercontent.com/u/84103538?v=4" alt="AL" />
+                <img
+                  src="https://avatars.githubusercontent.com/u/84103538?v=4"
+                  alt="AL"
+                />
                 <h3>Arthur Lin</h3>
-                <p>Developer</p>
+                <p>Level Designer, Tools Lead</p>
               </a>
             </div>
 
             <div class="team-member">
               <a href="https://github.com/aguizaro" target="_blank">
-                <img src="https://avatars.githubusercontent.com/u/77490592?v=4" alt="TG" />
+                <img
+                  src="https://avatars.githubusercontent.com/u/77490592?v=4"
+                  alt="TG"
+                />
                 <h3>Tony Guizar</h3>
-                <p>Developer</p>
+                <p>Lead Programmer, Network and Deployment</p>
               </a>
             </div>
 
             <div class="team-member">
-              <a href="https://github.com/mphein" target="_blank">
-                <img src="https://avatars.githubusercontent.com/u/130398478?v=4" alt="MH" />
-                <h3>Michael Hein</h3>
-                <p>Developer</p>
+              <a href="https://github.com/nmjxblw" target="_blank">
+                <img
+                  src="https://avatars.githubusercontent.com/u/127450936?v=4"
+                  alt="ZC"
+                />
+                <h3>Zhuo Chen</h3>
+                <p>Gameplay Programmer</p>
               </a>
             </div>
 
             <div class="team-member">
-              <a href="https://github.com/ssinha8" target="_blank">
-                <img src="https://avatars.githubusercontent.com/u/130398478?v=4" alt="SS" />
-                <h3>Shloak Sinha</h3>
-                <p>Developer</p>
+              <a href="https://github.com/KaneOvO" target="_blank">
+                <img
+                  src="https://avatars.githubusercontent.com/u/121581341?v=4"
+                  alt="ZL"
+                />
+                <h3>Zexuan Li</h3>
+                <p>Gameplay Programmer</p>
               </a>
             </div>
 
+            <div class="team-member">
+              <a href="https://github.com/StudentAlleg" target="_blank">
+                <img
+                  src="https://avatars.githubusercontent.com/u/36683605?v=4"
+                  alt="OP"
+                />
+                <h3>Owen Peterson</h3>
+                <p>Gameplay Programmer</p>
+              </a>
+            </div>
+
+            <div class="team-member">
+              <a href="https://github.com/pehara" target="_blank">
+                <img
+                  src="https://avatars.githubusercontent.com/u/130656028?v=4"
+                  alt="PV"
+                />
+                <h3>Pehara Vidana</h3>
+                <p>3D and User Interface Artist</p>
+              </a>
+            </div>
           </div>
-
         </section>
       </main>
       <footer>
         <div class="social-icons">
-          <a href="https://github.com/aguizaro/GolfProduction" target="_blank" title="GitHub">
-              <i class="fab fa-github"> Github</i>
+          <a
+            href="https://github.com/aguizaro/GolfProduction"
+            target="_blank"
+            title="GitHub"
+          >
+            <i class="fab fa-github"> Github</i>
           </a>
-      </div>
-      <div class="social-icons">
-          <a href="https://discord.gg/sQKhM8vmqe" target="_blank" title="DiscordInvite">
-              <i class="fa-brands fa-discord"> Playtest Server</i>
+        </div>
+        <div class="social-icons">
+          <a
+            href="https://discord.gg/sQKhM8vmqe"
+            target="_blank"
+            title="DiscordInvite"
+          >
+            <i class="fa-brands fa-discord"> Playtest Server</i>
           </a>
-      </div>
+        </div>
+
+        <div class="social-icons">
+          <a
+            href="https://store.steampowered.com/app/2976320/Golf_Bash_Online/"
+            target="_blank"
+            title="SteamPage"
+          >
+            <i class="fa-brands fa-steam"> Steam Page</i>
+          </a>
       </footer>
     </div>
-    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

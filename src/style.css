@@ -5,10 +5,10 @@
   --fourth-color: #306e36;
   --background-color: #de703c;
 
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 1.5;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
 
   color-scheme: light dark;
   color: black;
@@ -48,12 +48,17 @@ body {
 }
 
 header {
-  background-color: var(--fourth-color);
-  color: #fff;
+  color: var(--primary-color);
   padding: 0em;
   text-align: center;
-  border-radius: 5em;
+  background-color: var(--fourth-color);
+  border-radius: 1em;
   box-shadow: 6px 4px 6px rgb(255, 255, 255);
+}
+
+#title-img {
+  width: 90%;
+  height: auto;
 }
 
 nav {
@@ -63,7 +68,7 @@ nav {
   background-color: var(--fourth-color);
   padding: 0em;
   margin-bottom: 1em;
-  border-radius: 5em;
+  border-radius: 0.5em;
   box-shadow: 6px 4px 6px rgb(255, 255, 255);
 }
 
@@ -121,8 +126,15 @@ nav {
 }
 
 #game-display img {
-  max-width: 20em;
+  width: 18em;
   padding: 1em;
+}
+
+#team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #team-list {
@@ -133,18 +145,14 @@ nav {
   margin: 0em;
   overflow-x: auto;
   white-space: nowrap;
-  max-width: 75%;
+  width: 75vw;
+
 }
 
-
-#team {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .team-member {
+  width: 15em;
+  height: 18em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,9 +166,15 @@ nav {
 }
 
 .team-member img {
-  max-width: 6em;
-  max-height: 10em;
+  width: 6em;
+  height: 6em;
   border-radius: 50%;
+}
+
+.team-member p {
+  margin: 0.5em;
+  font-size: 0.9em;
+  text-wrap: wrap;
 }
 
 
@@ -200,7 +214,7 @@ footer {
   padding: 0.25em;
   bottom: 0;
   width: 100%;
-  border-radius: 5em;
+  border-radius: 1em;
   box-shadow: 6px 4px 6px #7d8d82;
 }
 
@@ -247,6 +261,32 @@ h3 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+
+ul {
+  text-align: left;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+li::before {
+  content: "•";
+  color: var(--fourth-color);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.roadmap {
+  display: flex;
+}
+
+.roadmap img {
+  width: 50%;
 }
 
 .game-title {
@@ -324,7 +364,7 @@ button:focus-visible {
 
 @media (max-width: 768px) {
   #game-display img {
-    max-width: 12em;
+    max-width: 11em;
   }
 
   .team-member {
@@ -350,6 +390,14 @@ button:focus-visible {
     font-size: 1em;
     margin: 1em 0 1em 0;
 
+  }
+
+  .roadmap {
+    flex-direction: column;
+  }
+
+  .roadmap img {
+    width: 100%;
   }
 
 
